@@ -7,7 +7,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 import Test from './screens/Test';
-
+import Discover from './screens/Discover';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +18,7 @@ const App = () => {
         <Stack.Navigator
           screenOptions={{ headerTitleAlign: 'center', }}>
           <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="Discover" component={Discover} />
         </Stack.Navigator>
       </NavigationContainer>
     </TailwindProvider >
